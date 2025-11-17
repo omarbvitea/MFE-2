@@ -3,10 +3,10 @@ const currentImports = {};
       let moduleMap = {
 "./Card":()=>{
       dynamicLoadingCss(["style-EO5aPr58.css"], false, './Card');
-      return __federation_import('./__federation_expose_Card-lg8x3-VN.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
+      return __federation_import('/mfe2/assets/__federation_expose_Card-lg8x3-VN.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},
 "./MicroApp":()=>{
       dynamicLoadingCss(["style-EO5aPr58.css"], false, './MicroApp');
-      return __federation_import('./__federation_expose_MicroApp-Ce-f_na7.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
+      return __federation_import('/mfe2/assets/__federation_expose_MicroApp-Ce-f_na7.js').then(module =>Object.keys(module).every(item => exportSet.has(item)) ? () => module.default : () => module)},};
       const seen = {};
       const dynamicLoadingCss = (cssFilePaths, dontAppendStylesToHead, exposeItemName) => {
         const metaUrl = import.meta.url;
@@ -16,7 +16,7 @@ const currentImports = {};
         }
 
         const curUrl = metaUrl.substring(0, metaUrl.lastIndexOf('remoteEntry.js'));
-        const base = '/';
+        const base = '/mfe2/';
         'assets';
 
         cssFilePaths.forEach(cssPath => {
